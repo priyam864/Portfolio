@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #230c68;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #230c68;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .timeline-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: #230c68;
+            border-radius: 50%;
+            left: 0%;
+            transform: translateX(-50%);
+            top: 20px;
+            z-index: 1;
+            box-shadow: 0 0 0 4px #fff; /* White border */
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item:nth-child(odd) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item h3 {
+            margin-top: 0;
+            color: #230c68;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        .timeline-item p {
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .timeline-item:hover h3 {
+            color: #555;
+        }
+        footer {
+            background: #230c68;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .timeline-item {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 15px;
+            }
+            .timeline::after {
+                left: 31px; /* Adjust the line to fit smaller screens */
+            }
+            .timeline-item::before {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education Timeline</h1>
+    </header>
+
+    <div class="container">
+        <ul class="timeline">
+            <li class="timeline-item">
+                <h3>Schooling</h3>
+                <p>Completed my schooling at St.Xaviers Higher Secondary School , focusing on a strong foundation in mathematics and science. Participated in various extracurricular activities and academic competitions.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>JEE Preparation</h3>
+                <p>Dedicated time to preparing for the Joint Entrance Examination (JEE). Attended Resonanace coaching classes ..</p>
+            </li>
+            <li class="timeline-item">
+                <h3>Undergraduate Studies at BIT, Bangalore (2022 - Present)</h3>
+                <p>Currently pursuing a Bachelor’s degree at BIT Bangalore, specializing in <div cse-Data="" science=""></div>. Engaged in various projects, internships, and activities to enhance my technical skills and knowledge.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>Ongoing Education (2024 - Present)</h3>
+                <p>Continuing to expand my expertise through advanced coursework, industry-related projects, and personal development. Actively participating in hackathons and contributing to open-source projects.</p>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Priyam Kumari. All rights reserved.</p>
+    </footer>
+</body>
+</html>

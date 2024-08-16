@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #230c68;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .project-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(50% - 20px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .project-item h2 {
+            margin-top: 0;
+            color: #230c68;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .project-item p {
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .project-item .tech-stack {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .project-item a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #230c68;
+            border: 1px solid #230c68;
+            border-radius: 4px;
+            padding: 10px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .project-item a:hover {
+            background: #230c68;
+            color: #fff;
+        }
+        footer {
+            background: #230c68;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <div class="container">
+        <div class="project-list">
+            <div class="project-item">
+                <h2>FireAlarmSystem-IOT</h2>
+                <p>An Arduino-based IoT system that detects temperature and smoke changes, issuing alerts via LED and buzzer to enhance fire safety.</p>
+                <div class="tech-stack">
+                    <a href="https://www.tinkercad.com/things/eNQQbUSSYpU" target="_blank" rel="noopener noreferrer">
+                        View Simulation
+                    </a>
+                </div>
+                
+                <a href="https://github.com/priyam864/FireAlarmSystem-IOT" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h2>2048 Game in Java</h2>
+                <p>This is a simple implementation of the 2048 game using Java and Swing. The game involves merging tiles of the same value on a 4x4 grid to reach the 2048 tile.</p>
+                <a href="https://github.com/priyam864/Game2048" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h2>Portfolio</h2>
+                <p>personal portfolio</p>
+                <a href="https://github.com/priyam864/Portfolio" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add more project items here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Priyam Kumari. All rights reserved.</p>
+    </footer>
+</body>
+</html>
